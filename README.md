@@ -13,8 +13,8 @@ I’m primarily documenting this for my own reference, but I’m happy to share 
 ### The different types of error codes
 
 1. **displayed System/Keyboard error codes**
-2. **coarse power-up / LED error groups**
-3. **parallel test-plug subcodes**
+2. **LED error groups**
+3. **parallel test-plug**
 
 Note: the same numeric value can have a different meaning depending on the diagnostic layer.
 
@@ -72,7 +72,8 @@ The Maintenance Handbook documents the on-screen codes `0001`–`0007` in **Tabl
 ---
 
 ### 2 LED Binary Values During POST
-See ROM `ROMERR` module. The original source also notes that the LED bits are inverted because the LEDs are active-low. The LEDs are located 
+See ROM `ROMERR` module. The original source also notes that the LED bits are inverted because the LEDs are active-low.  
+The LEDs are located along the outer edge of the systemboard and are visible from the outside.
 
 | LED binary value | Phase | Notes |
 |---:|---|---|
@@ -86,8 +87,7 @@ See ROM `ROMERR` module. The original source also notes that the LED bits are in
 | `0` | POST complete | Normal completion / LEDs off |
 
 
-The LED display marks the current or last-reached POST state, while the on-screen error code identifies the error class. For `System Error 0004`, the ROM logic seems more detailed than the handbook wording: the same stage covers the interrupt-controller tests and the timer-accuracy tests. The LEDs are located along the outer edge of the systemboard and are visible from the outside.
-
+The LED display marks the current or last-reached POST state, while the on-screen error code identifies the error class. For `System Error 0004`, the ROM logic seems more detailed than the handbook wording: the same stage covers the interrupt-controller tests and the timer-accuracy tests.
 
 ---
 
