@@ -38,7 +38,7 @@ Note: the same numeric value can have a different meaning depending on the diagn
 | `0012` | Keyboard Error | Keyboard RAM failure | Code transmitted by keyboard |
 | `0013` | Keyboard Error | Keyboard ROM failure | Code transmitted by keyboard |
 | `0014` | Keyboard Error | Unexpected keyboard response |  |
-| `0015` | Keyboard Error | ACK character receive error |  |
+| `0015` | Keyboard Error | ACK character receive error | noise on line, wrong baud rate or signal level |
 | `0020` | System Error | Option RAM bank 1 failure | Handbook / ROM |
 | `0021` | System Error | Option RAM bank 2 failure | Handbook / ROM |
 | `0022` | System Error | Option RAM bank 3 failure | Handbook / ROM |
